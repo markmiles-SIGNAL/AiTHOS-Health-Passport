@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AiTHOS Health Passport</title>
+  <meta name="description" content="Health Passport by AiTHOS helps teens build health independence, check in for care, and start their Healthograph in minutes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AiTHOS Health Passport home">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>AiTHOS</strong>
+        <small>Health Passport</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#how">How it works</a>
+      <a href="#passport">Passport</a>
+      <a href="#parents">For parents</a>
+      <a href="#providers">Providers</a>
+    </nav>
+    <a class="nav-cta" href="#start">Start free</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Health Passport · Powered by AiTHOS</p>
+        <h1>Health Independence Begins Here.</h1>
+        <p class="subhead">Build your Health Passport in under 5 minutes. Check in for care, document every visit, and start a Healthograph that grows up with you.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#start">Build My Health Passport</a>
+          <a class="button secondary" href="#passport">See the Passport</a>
+        </div>
+        <p class="trust-note">No medical records required to begin. Add only what you’re comfortable sharing.</p>
+      </div>
+
+      <div class="passport-stage reveal delay-1" aria-label="Health Passport visual preview">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <article class="passport-card">
+          <div class="card-top">
+            <span>AiTHOS</span>
+            <span>HEALTH PASSPORT</span>
+          </div>
+          <div class="chip-row">
+            <div class="chip"></div>
+            <div class="signal-badge">Signal: Ready</div>
+          </div>
+          <div class="card-name">YOUR HEALTH ID</div>
+          <div class="card-meta">
+            <span>Allergies: Set</span>
+            <span>Meds: Set</span>
+            <span>Emergency: On</span>
+          </div>
+          <div class="qr-block">
+            <div class="qr-grid" aria-hidden="true"></div>
+            <span>Scan to check in</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="value-strip" aria-label="Core value points">
+      <div><strong>5 min</strong><span>to create</span></div>
+      <div><strong>Apple Wallet</strong><span>ready</span></div>
+      <div><strong>Parent link</strong><span>to complete details</span></div>
+      <div><strong>Every visit</strong><span>builds your Healthograph</span></div>
+    </section>
+
+    <section id="how" class="section-pad split">
+      <div class="section-intro reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>Start light. Build over time.</h2>
+        <p>Health Passport is the teen-friendly front door. It becomes Healthograph Lite in young adulthood and a more complete Healthograph when life and care become more complex.</p>
+      </div>
+      <div class="steps-grid reveal delay-1">
+        <article>
+          <span class="step-number">01</span>
+          <h3>Create your Passport</h3>
+          <p>Answer a few basics: name, age range, emergency contact, allergies, medications, and your health goals.</p>
+        </article>
+        <article>
+          <span class="step-number">02</span>
+          <h3>Add to Wallet</h3>
+          <p>Download a mobile Health Passport for check-in and readiness. A premium physical card can follow.</p>
+        </article>
+        <article>
+          <span class="step-number">03</span>
+          <h3>Invite a parent</h3>
+          <p>Parents can complete thoughtful details like doctor, immunizations, insurance, and family health notes.</p>
+        </article>
+        <article>
+          <span class="step-number">04</span>
+          <h3>Document care</h3>
+          <p>AiTHOS Certified providers can scan your Passport and upload visit notes or care updates within 24 hours.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="passport" class="section-pad dark-panel-section">
+      <div class="section-intro centered reveal">
+        <p class="eyebrow">The hook</p>
+        <h2>Every visit builds your Healthograph.</h2>
+        <p>Your Health Passport is both a status object and a health identity tool — physical, digital, and designed to get smarter with each care interaction.</p>
+      </div>
+      <div class="feature-cards">
+        <article class="feature-card reveal">
+          <span class="icon">◇</span>
+          <h3>Health Signal Badge</h3>
+          <p>A simple readiness badge teens can personalize as their Passport becomes more complete.</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <span class="icon">▣</span>
+          <h3>Check-in ready</h3>
+          <p>QR/NFC-style access for participating AiTHOS Certified providers to receive authorized profile details.</p>
+        </article>
+        <article class="feature-card reveal delay-2">
+          <span class="icon">↗</span>
+          <h3>Visit updates</h3>
+          <p>Provider summaries, forms, clearances, vaccinations, and care notes can be added after visits.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="start" class="section-pad builder-section">
+      <div class="builder-copy reveal">
+        <p class="eyebrow">Build in under 5 minutes</p>
+        <h2>Create your Health Passport Lite.</h2>
+        <p>This demo form shows the minimal teen setup. Parent questions are delivered after the Passport is created.</p>
+      </div>
+
+      <form class="builder-card reveal delay-1" id="passportForm">
+        <label>
+          Preferred name
+          <input type="text" id="name" placeholder="Alex" required />
+        </label>
+        <label>
+          Age range
+          <select id="ageRange" required>
+            <option value="">Select</option>
+            <option>13–15</option>
+            <option>16–17</option>
+            <option>18+</option>
+          </select>
+        </label>
+        <label>
+          Emergency contact first name
+          <input type="text" id="emergency" placeholder="Mom, Dad, Jamie" required />
+        </label>
+        <label>
+          Allergies
+          <select id="allergies" required>
+            <option value="">Select</option>
+            <option>None</option>
+            <option>Yes</option>
+            <option>Not sure</option>
+          </select>
+        </label>
+        <label>
+          Regular medications
+          <select id="meds" required>
+            <option value="">Select</option>
+            <option>None</option>
+            <option>Yes</option>
+            <option>Not sure</option>
+          </select>
+        </label>
+        <label>
+          What do you care about most right now?
+          <select id="goal" required>
+            <option value="">Select</option>
+            <option>Sports readiness</option>
+            <option>School or college forms</option>
+            <option>Travel readiness</option>
+            <option>Sleep and energy</option>
+            <option>Learning how health works</option>
+            <option>Just getting organized</option>
+          </select>
+        </label>
+        <button class="button primary full" type="submit">Generate My Passport</button>
+        <p class="form-note">Prototype only. Do not enter sensitive medical details.</p>
+      </form>
+    </section>
+
+    <section class="preview-section section-pad" id="preview" hidden>
+      <div class="wallet-preview">
+        <div>
+          <p class="eyebrow">Your Passport Preview</p>
+          <h2 id="previewTitle">Alex’s Health Passport</h2>
+          <p id="previewText">Your Health Passport Lite is ready. Add it to your phone and send the parent completion link.</p>
+          <div class="hero-actions">
+            <button class="button primary" id="walletBtn">Add to Apple Wallet</button>
+            <button class="button secondary" id="parentBtn">Send Parent Completion Link</button>
+          </div>
+          <p class="trust-note">Production Apple Wallet passes require Apple PassKit certificates and a backend signing service.</p>
+        </div>
+        <article class="mini-passport" id="miniPassport">
+          <span>AiTHOS Health Passport</span>
+          <strong id="cardName">Alex</strong>
+          <p id="cardGoal">Signal: Ready</p>
+          <small id="cardMeta">Emergency contact set · Allergies set · Meds set</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="parents" class="section-pad split reverse">
+      <div class="parent-panel reveal">
+        <h3>Parent completion questions</h3>
+        <ul>
+          <li>Primary doctor or clinic</li>
+          <li>Insurance basics</li>
+          <li>Immunization record</li>
+          <li>Family health history</li>
+          <li>Sports, school, or travel forms</li>
+          <li>Emergency permissions</li>
+        </ul>
+      </div>
+      <div class="section-intro reveal delay-1">
+        <p class="eyebrow">Parent-assisted accuracy</p>
+        <h2>Teens start it. Parents make it complete.</h2>
+        <p>The teen gets instant value in minutes. Parents receive a separate link to thoughtfully complete the details teens may not know.</p>
+      </div>
+    </section>
+
+    <section id="providers" class="section-pad provider-section">
+      <div class="section-intro centered reveal">
+        <p class="eyebrow">AiTHOS Certified Providers</p>
+        <h2>A differentiator for practices that help young people build health independence.</h2>
+        <p>Participating providers can scan the Health Passport at check-in and submit care updates back to the Healthograph after the visit.</p>
+      </div>
+      <div class="provider-flow reveal delay-1">
+        <span>Scan Passport</span>
+        <span>Confirm Consent</span>
+        <span>Complete Visit</span>
+        <span>Upload Update</span>
+        <span>Healthograph Grows</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>AiTHOS Health Passport</strong>
+      <p>Health independence begins here.</p>
+    </div>
+    <p>Prototype landing page. Not medical advice. Do not use for emergencies.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
